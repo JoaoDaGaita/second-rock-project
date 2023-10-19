@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body,
+  input,
+  textarea,
+  button {
+    @apply font-roboto font-normal text-base;
+  }
+  body {
+    @apply bg-gray-900 text-gray-300 antialiased;
+  }
+  th {
+    @apply bg-gray-600 p-4 text-left text-gray-100 text-sm leading-relaxed first:rounded-tl-lg pl-6
+    last:rounded-tr-lg pr-6;
+  }
+  td {
+    @apply bg-gray-700 border-t-4 border-gray-800 p-4 text-sm font-bold text-base-gray6
+    first:pl-6 first:w-1/2 last:pr-6;
+  }
+}
